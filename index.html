@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+</head>
+<body>
+  <div class="first-section">
+    <div class="wrapper">
+      <header class="header">
+        <div class="navbar">
+          <div class="logo"></div>
+          <div class="hamburger">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="nav">
+            <li><a href="#">Features</li></a>
+            <li><a href="#">Pricing</li></a>
+            <li><a href="#">Resources</li></a>
+          </ul>
+        </div>
+        <div class="login-group">
+          <div class="login"><a href="#">Login</a></div>
+          <div class="signup"><button class="btn">Sign Up</button></div>
+        </div>
+      </header>
+    </div>
+    <!-- Hero -->
+    <div class="hero">
+      <div class="wrapper">
+        <div class=" container">
+          <div class="nav-small">
+            <ul>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Resources</a></li>
+              <hr>
+              <li><a href="#">Login</a></li>
+              <div class="signup"><button class="btn">Sign Up</button></div>
+            </ul>
+          </div>
+          <h1 class="title">More than just shorter links</h1>
+          <p class="subtitle">Build your brand’s recognition and get detailed insights 
+          on how your links are performing.</p>
+          <div class="started"><button class="btn btn-lg">Get Started</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="second-section">
+    <div class="wrapper">
+    <!-- Shorten API -->
+      <div class="shortenFunction">
+        <div class="shortenFunction-inner">
+          <input type="text" class="input-link" placeholder="Shorten a link here...">
+          <input type="submit" class="btn btn-lg btn--shorten" value="Shorten It!">
+          <div class="empty"></div>
+        </div>
+        <div class="shortenResults">
+        </div>
+      </div>
+      <div class="features">
+        <h1 class="title">Advanced Statistics</h1>
+        <p class="subtitle">Track how your links are performing across the web with our 
+          advanced statistics dashboard.</p>
+      </div>
+    <!-- Feature cards -->
+      <div class="feature-cards">
+        <div class="card card1">
+          <div class="card_icon" style="background-image:url('images/icon-brand-recognition.svg')"></div>
+          <h4 class="title card_title">Brand Recognition</h4>
+          <p class="card_content">Boost your brand recognition with each click. Generic links don’t 
+            mean a thing. Branded links help instil confidence in your content.</p>
+        </div>
+        <div class="card card2">
+          <div class="card_icon" style="background-image:url('images/icon-detailed-records.svg')"></div>
+          <h4 class="title card_title">Detailed Records</h4>
+          <p class="card_content">Gain insights into who is clicking your links. Knowing when and where 
+            people engage with your content helps inform better decisions.</p>
+        </div>
+        <div class="card card3">
+          <div class="card_icon" style="background-image:url('images/icon-fully-customizable.svg')"></div>
+          <h4 class="title card_title">Fully Customizable</h4>
+          <p class="card_content">Improve brand awareness and content discoverability through customizable 
+            links, supercharging audience engagement.</p>
+        </div>
+        <div class="card-linking">
+          <div class="cards-linking-line-sm"></div>
+          <div class="cards-linking-line-lg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="boost">
+    <h1 class="title boost_title">Boost your links today</h1>
+    <button class="btn btn-lg">Get Started</button>
+  </div>
+  
+  
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="logo">
+        <img src="/images/logo.svg" alt="Shortly">
+      </div>
+      <div class="nav">
+        <div class="nav_links"> 
+          <div class="nav_title">Features</div> 
+          <ul>
+            <li>Link Shortening</li>
+            <li>Branded Links</li>
+            <li>Analytics</li>
+          </ul>
+        </div>
+        <div class="nav_links"> 
+          <div class="nav_title">Resources</div> 
+          <ul>
+            <li>Blog</li>
+            <li>Developers</li>
+            <li>Support</li>
+          </ul>
+        </div>
+        <div class="nav_links"> 
+          <div class="nav_title">Company</div> 
+          <ul>
+            <li>About</li>
+            <li>Our Team</li>
+            <li>Careers</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+      <div class="socials">
+        <a class="social-icon" href="#" style="background-image: url('/images/icon-facebook.svg');"></a>
+        <a class="social-icon" href="#" style="background-image: url('/images/icon-twitter.svg')"></a>
+        
+        <a class="social-icon" href="#" style="background-image: url('/images/icon-pinterest.svg')"></a>
+        <a class="social-icon" href="#" style="background-image: url('/images/icon-instagram.svg');"></a>
+      </div>
+    </div>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Metis Teng</a>.
+    </div>
+  </footer>
+  <!-- Javascript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+</body>
+</html>

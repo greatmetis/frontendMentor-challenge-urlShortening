@@ -3,7 +3,7 @@ This is one of the Challenges from Frontend Mentor
 
 > **Except the codes, all colors and design are contributed by [Frontend Mentor](https://www.frontendmentor.io/solutions).**
 
-#### click to see [result]()
+#### click to see [result](https://greatmetis.github.io/frontendMentor-challenge-urlShortening/)
 ## Front-end Style Guide
 
 ### Layout

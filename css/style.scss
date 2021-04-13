@@ -687,6 +687,9 @@ body {
     grid-template-columns: 40% 40% 20%;
   }
   .logo {
+    background: url(../images/logo.svg) no-repeat center left;
+    height: 80px;
+    width: 150px;
     filter: brightness(600%);
   }
   .nav {

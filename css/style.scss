@@ -343,11 +343,11 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        hr {
-          border: 0.5px solid rgba($color--grayish, 0.2);
-        }
         li {
           padding: 16px;
+          &:nth-child(4) {
+            border-top: 3px solid rgba($color--grayish, 0.2);
+          }
           a {
             font-weight: 700;
             color: white;
@@ -392,10 +392,6 @@ body {
 }
 // shortenFunction
 .shortenFunction {
-  // margin-bottom: 40px;
-  // margin-left: 16px;
-  // margin-right: 16px;
-  // position it off the section
   top: -60px;
   .shortenFunction-inner {
     padding: 40px;
@@ -412,11 +408,9 @@ body {
     border: none;
     outline: none;
     font-size: 18px;
-
     &:focus {
       box-shadow: 1px 5px 10px rgba(black, 0.5);
     }
-    // To be fixed
     &.empty-alert {
       border: 3px solid $color--secondary;
       &::placeholder {
@@ -456,20 +450,20 @@ body {
     font-size: 16px;
     margin-bottom: 16px;
     [class^="original_link-"] {
-      flex: 8;
-      align-self: center;
-    }
-    [class^="short_link-"] {
-      flex: 3;
-      text-align: right;
-      padding-right: 16px;
-      color: $color--primary;
+      flex: 6;
       align-self: center;
     }
     input {
       outline: none;
       border: none;
       font-size: 18px;
+      flex: 5;
+      flex-wrap: wrap;
+      text-align: right;
+      margin: 0 8px;
+      color: $color--primary;
+      align-self: center;
+      overflow: scroll;
       &::selection {
         background-color: lighten($color--blue-dark, 30);
       }
@@ -479,6 +473,9 @@ body {
       text-align: center;
       align-self: center;
       border-radius: 8px;
+      &.copied {
+        background-color: $color--primary-dark;
+      }
     }
     &.error {
       * {
@@ -509,6 +506,32 @@ body {
     .btn--shorten {
       margin-left: 0;
       margin-top: 16px;
+    }
+  }
+  .shortenResults {
+    .result {
+      flex-direction: column;
+      & > * {
+        padding: 8px;
+        width: 100%;
+      }
+      [class^="original_link-"] {
+        text-align: left;
+        font-size: 14px;
+        &::after {
+          content: "";
+          height: 1px;
+          width: 100%;
+          display: block;
+          background-color: lighten($color--grayish, 30);
+          margin-top: 8px;
+        }
+      }
+      input {
+        align-self: start;
+        text-align: left;
+        margin: 0;
+      }
     }
   }
 }

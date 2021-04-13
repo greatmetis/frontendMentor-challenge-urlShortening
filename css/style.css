@@ -358,11 +358,11 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .hero .nav-small ul hr {
-    border: 0.5px solid rgba(158, 154, 167, 0.2);
-  }
   .hero .nav-small ul li {
     padding: 16px;
+  }
+  .hero .nav-small ul li:nth-child(4) {
+    border-top: 3px solid rgba(158, 154, 167, 0.2);
   }
   .hero .nav-small ul li a {
     font-weight: 700;
@@ -495,21 +495,9 @@ body {
 }
 
 .shortenResults .result [class^="original_link-"] {
-  -webkit-box-flex: 8;
-      -ms-flex: 8;
-          flex: 8;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.shortenResults .result [class^="short_link-"] {
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
-  text-align: right;
-  padding-right: 16px;
-  color: #2acfcf;
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -519,6 +507,18 @@ body {
   outline: none;
   border: none;
   font-size: 18px;
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: right;
+  margin: 0 8px;
+  color: #2acfcf;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  overflow: scroll;
 }
 
 .shortenResults .result input::-moz-selection {
@@ -538,6 +538,10 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   border-radius: 8px;
+}
+
+.shortenResults .result .btn.copied {
+  background-color: #3b3054;
 }
 
 .shortenResults .result.error * {
@@ -572,6 +576,35 @@ body {
   .shortenFunction-inner .btn--shorten {
     margin-left: 0;
     margin-top: 16px;
+  }
+  .shortenResults .result {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .shortenResults .result > * {
+    padding: 8px;
+    width: 100%;
+  }
+  .shortenResults .result [class^="original_link-"] {
+    text-align: left;
+    font-size: 14px;
+  }
+  .shortenResults .result [class^="original_link-"]::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    display: block;
+    background-color: #edecee;
+    margin-top: 8px;
+  }
+  .shortenResults .result input {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    text-align: left;
+    margin: 0;
   }
 }
 

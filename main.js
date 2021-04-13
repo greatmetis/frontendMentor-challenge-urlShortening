@@ -46,17 +46,15 @@ btnShorten.click(function(){
                 let status = res.status
                 let result = new Result(resultError,inputUrl,status,textColor)
                 result.pushToArray()
-                // let showResults = new ShowResults()
                 showResult()
                 },
             success:function(res){
                 btnShorten.prop("value","Shorten It!")
-                let textColor = "hsl(180, 66%, 49%)"
+                let textColor = "hsl(257, 7%, 63%)"
                 let sLink = "https://" + res.result.short_link
                 let status = 200
                 let result=new Result(inputUrl,sLink,status,textColor)
                 result.pushToArray()
-                // let showResults = new ShowResults()
                 showResult()
                 }
             })
@@ -92,12 +90,10 @@ function showResult(){
         let inputVal = $(this).children('input')
         inputVal.select()
         document.execCommand("copy")
+        
     })
     })
 }
-
-
-
 
 // Scroll Reveal
 ScrollReveal({duration:1000,dekay:300})
